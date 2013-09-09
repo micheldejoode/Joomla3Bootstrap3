@@ -179,9 +179,7 @@ $doc->addStyleSheet('templates/' . $this->template . '/css/carousel.css');
 
       <!-- /END THE FEATURETTES -->
 
-<div class="container">
-	<jdoc:include type="modules" name="position-1" style="xhtml" />
-	</div>
+
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
