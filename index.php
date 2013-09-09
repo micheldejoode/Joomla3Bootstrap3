@@ -212,9 +212,6 @@ $doc->addStyleSheet('templates/' . $this->template . '/css/carousel.css');
   })(jQuery);
 </script>
 
-	
-   
-	
   </body>
 </html>
 
