@@ -1,4 +1,4 @@
 Joomla3Bootstrap3
 =================
 
-A blank Joomla 3 Bootstrap 3 template
+Joomla3Bootstrap3 is an attempt to make a blank Joomla 3.1 template based on the all new Bootstrap 3. It's just a tryout, to see if we can make things work for our needs. 
