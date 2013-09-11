@@ -3,6 +3,8 @@
 defined('_JEXEC') or die;
 
 $doc = JFactory::getDocument();
+$app = JFactory::getApplication();
+
 
 $doc->addStyleSheet('templates/' . $this->template . '/css/bootstrap.min.css');
 $doc->addStyleSheet('templates/' . $this->template . '/css/carousel.css');
@@ -35,30 +37,22 @@ $doc->addStyleSheet('templates/' . $this->template . '/css/carousel.css');
     </button>
 
     <!-- Be sure to leave the brand out there if you want it shown -->
-    <a class="navbar-brand" href="/bootstrap3-test/">Joomtemp </a>
+    <!--a class="navbar-brand" href="/bootstrap3-test/"><?php echo $app->getCfg( 'sitename' );?> </a-->
 </div>
-
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-   <div class="collapse navbar-collapse navbar-collapse">
-
-	<jdoc:include type="modules" name="position-1" style="xhtml" />
-	
-	<form class="navbar-form navbar-right" role="search">
+            <div class="navbar-collapse collapse">
+              <jdoc:include type="modules" name="position-1" style="xhtml" />
+            
+          <form class="navbar-form navbar-right" role="search">
       <div class="form-group">
         <input type="text" class="form-control" placeholder="Search">
-			 <jdoc:include type="modules" name="search" style="xhtml" />
+			 
       </div>
       <button type="submit" class="btn btn-default">Submit</button>
     </form>
-
-	
-
-    </div><!-- /.navbar-collapse -->
+	</div>
 </div>
-</nav>
-</div>
-  
+   </div>    
+
 	
 		
     <!-- Carousel
@@ -179,7 +173,9 @@ $doc->addStyleSheet('templates/' . $this->template . '/css/carousel.css');
 
       <!-- /END THE FEATURETTES -->
 
-
+<div class="container">
+	<jdoc:include type="modules" name="position-1" style="xhtml" />
+	</div>
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
@@ -210,6 +206,9 @@ $doc->addStyleSheet('templates/' . $this->template . '/css/carousel.css');
   })(jQuery);
 </script>
 
+	
+   
+	
   </body>
 </html>
 
