@@ -2,7 +2,7 @@
 <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
 <extension version="3.1" type="template">
   <name>JBootstrap3</name>
-  <version>1.1</version>
+  <version>1.0</version>
   <creationDate>09-09-2013</creationDate>
   <author>M M Productions</author>
   <authorEmail>micheldejoode@gmail.com</authorEmail>
@@ -13,7 +13,6 @@
     <folder>css</folder>
     <folder>js</folder>
     <folder>images</folder>
-	<folder>html</folder>
 	<folder>fonts</folder>
   </files>
   <positions>

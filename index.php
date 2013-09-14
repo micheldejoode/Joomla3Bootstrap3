@@ -5,11 +5,9 @@ defined('_JEXEC') or die;
 $doc = JFactory::getDocument();
 $app = JFactory::getApplication();
 
-
 $doc->addStyleSheet('templates/' . $this->template . '/css/bootstrap.min.css');
 $doc->addStyleSheet('templates/' . $this->template . '/css/carousel.css');
-
-
+$doc->addStyleSheet('templates/' . $this->template . '/css/custom.css');
 ?>
 <!DOCTYPE html>
 <html>
@@ -130,6 +128,30 @@ $doc->addStyleSheet('templates/' . $this->template . '/css/carousel.css');
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
+	  <hr class="featurette-divider">
+		<!-- start component output -->
+	  <div class="row">
+		
+		<div class="col-lg-6">
+		 <div class="container">
+			<jdoc:include type="message" />
+			<jdoc:include type="component" />
+		 </div>
+	    </div>
+		
+	    <div class="col-lg-6">
+		 <div class="container">
+			<jdoc:include type="message" />
+			<jdoc:include type="component" />
+		 </div>
+	    </div>
+		
+	  </div>
+	<!-- end row component output -->	
+	  
+
+	  
+	  
 
       <!-- START THE FEATURETTES -->
 
@@ -173,9 +195,7 @@ $doc->addStyleSheet('templates/' . $this->template . '/css/carousel.css');
 
       <!-- /END THE FEATURETTES -->
 
-<div class="container">
-	<jdoc:include type="modules" name="position-1" style="xhtml" />
-	</div>
+
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>

@@ -1,0 +1,16 @@
+p.readmore .btn {
+  color: #ffffff;
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+  
+p.readmore .btn:hover, p.readmore .btn.active  {
+  color: #ffffff;
+  background-color: #3276b1;
+  border-color: #285e8e;
+}
+  
+p.readmore .btn:active,
+p.readmore .btn.active {
+  background-image: none;
+}
